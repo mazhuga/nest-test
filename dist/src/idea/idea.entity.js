@@ -17,10 +17,6 @@ __decorate([
     __metadata("design:type", String)
 ], IdeaEntity.prototype, "id", void 0);
 __decorate([
-    typeorm_1.CreateDateColumn(),
-    __metadata("design:type", Date)
-], IdeaEntity.prototype, "created", void 0);
-__decorate([
     typeorm_1.Column('text'),
     __metadata("design:type", String)
 ], IdeaEntity.prototype, "idea", void 0);
