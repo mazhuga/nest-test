@@ -7,19 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const typeorm_1 = require("@nestjs/typeorm");
-const app_controller_1 = require("./app.controller");
-const app_service_1 = require("./app.service");
-const idea_module_1 = require("./idea/idea.module");
-const idea_service_1 = require("./idea/idea.service");
-let AppModule = class AppModule {
+let IdeaService = class IdeaService {
 };
-AppModule = __decorate([
-    common_1.Module({
-        imports: [typeorm_1.TypeOrmModule.forRoot(), idea_module_1.IdeaModule],
-        controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService, idea_service_1.IdeaService],
-    })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+IdeaService = __decorate([
+    common_1.Injectable()
+], IdeaService);
+exports.IdeaService = IdeaService;
+//# sourceMappingURL=idea.service.js.map
